@@ -21,6 +21,7 @@ body {
 
 .header {
     background-color: lightblue;
+    height: 185px;
 
     grid-area: 1 / 2 / 2 / 3;
 }
@@ -95,6 +96,8 @@ body {
 .main-content {
     background-color: rgb(219, 215, 215);
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
 
     grid-area: 2 / 2 / 3 / 3;
 
@@ -109,7 +112,7 @@ body {
     width: 350px;
     height: 200px;
     background-color: white;
-    border-radius: 4%;
+    border-radius: 12px;
     border: 8px solid white;
     border-left-color: orange;
     display: grid;
@@ -140,11 +143,43 @@ body {
 }
 
 .announcements-container {
-    
+
 }
 
-.announcements-content {
+.announcements-content , .trending-content {
     background-color: white;
     width: 250px;
     height: 350px;
+    border-radius: 12px;
+}
+
+.rightcontainer {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+h4 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.ann-top > p , .ann-center > p , .ann-bottom > p  {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 15px;
+    width: 231px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.account > img {
+    width: 50px;
+    padding-left: 15px;
+}
+
+.trend-text > p {
+    margin-top: 4px;
 }
