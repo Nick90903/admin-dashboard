@@ -97,7 +97,7 @@ body {
 }
 
 .main-content {
-    background-color: rgb(219, 215, 215);
+    background-color: #e2e8f0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -243,7 +243,7 @@ input {
     width: 100%;
     border-radius: 15px;
     border: 0px;
-    background-color: rgb(211, 209, 209);
+    background-color: #e2e8f0;
 }
 
 button {
