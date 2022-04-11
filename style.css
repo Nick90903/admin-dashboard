@@ -4,7 +4,6 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
@@ -20,10 +19,14 @@ body {
 }
 
 .header {
-    background-color: lightblue;
+    background-color: white;
     height: 185px;
 
     grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -182,4 +185,33 @@ h4 {
 
 .trend-text > p {
     margin-top: 4px;
+}
+
+.bottom-left {
+    display: flex;
+}
+
+.b-text > p {
+    margin: 0px;
+}
+
+.b-text > h3 {
+    margin: 0px;
+}
+
+.head-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.head-top {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+input {
+    max-height: 30px;
 }
